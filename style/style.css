@@ -47,15 +47,15 @@ img {
 
 
 #hand-right {
-    width: 13%;
-    padding-right: 3%;
+    width: 15%;
+    margin-left: 3%;
     padding-top: 5%;
     
 
     
 }
 .hand-left {
-    width: 13%;
+    width: 15%;
     padding-left: 3%;
     padding-top: 5%;
     -webkit-transform: scaleX(-1);
@@ -66,35 +66,45 @@ img {
     
 }
 
-.ver-proyecto-dcha {
-   
-}
+
 
 .boton-proyecto{
     display: flex;
     justify-content: center;
     background-color: rgb(50, 73, 228);
     border-radius: 6px;
-    width: 50%;
+    width: 100%;
     align-items: center;
     margin-top: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
     cursor: pointer;
-
-    
-}
-.boton-proyecto:hover {
-    background-color: royalblue;
+    text-decoration:none;
+    /* margin-right: 10%; */
+       
 }
 
-.boton-proyecto:active {
+
+
+.text-project a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+
+/* .boton-proyecto:active {
     background-color: rgba(218, 179, 220, 1);
+    color: seagreen;
 }
 
-.ver-proyecto-dcha #hand:active {
+
+.boton-proyecto:active .ver-proyecto-dcha{
     color: rgb(50, 73, 228);
+} */
 
-}
 
 
 #hello {
@@ -116,9 +126,37 @@ img {
     border-radius: 20px;
     display: flex;
     align-content: space-around;
+    background-color: rgba(243, 210, 229, 1);
 }
 
+.project:hover {
+    background-color: rgb(50, 73, 228);
+}
 
+.project:hover p{
+    color: rgba(243, 210, 229, 1);
+}
+.project:hover h3{
+    color: rgba(243, 210, 229, 1);
+}
+
+.project:hover .image-project{
+    filter: opacity(100%);
+
+}
+
+.project:hover .boton-proyecto{
+    background-color: rgba(243, 210, 229, 1);
+
+}
+
+.project:hover .ver-proyecto-dcha{
+color: rgb(50, 73, 228);
+}
+
+.project:hover .boton-proyecto:hover {
+    background-color: rgba(218, 179, 220, 1);
+}
 
 .image-project {
     height: 300px;
@@ -136,7 +174,10 @@ img {
     padding-left: 3%;
     padding-right: 3%;
     text-align: center;
-    color:rgb(50, 73, 228)
+    color:rgb(50, 73, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -146,4 +187,20 @@ img {
 
 .two {
     flex-direction: row-reverse;
+}
+
+
+@keyframes logo {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+
+}
+
+#logo {
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+    animation-timing-function: linear;
 }
