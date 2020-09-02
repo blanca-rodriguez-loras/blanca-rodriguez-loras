@@ -43,7 +43,7 @@ h2 {
 .palabras-menu {
     margin-right: 3%;
     max-width: 100%;
-    padding-right: 2%;
+    padding: 1em;
 }
 .palabras-menu :hover {
     color:rgb(50, 73, 228);
